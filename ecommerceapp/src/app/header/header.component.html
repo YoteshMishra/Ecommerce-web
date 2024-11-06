@@ -1,0 +1,41 @@
+<nav class="header">
+  <div class="logo">
+    <a routerLink="/home">
+      <img src="assets/images/logo.png" alt="Logo" />
+    </a>
+  </div>
+  <div class="home-button">
+    <a routerLink="/home" class="btn btn-outline-primary">
+      <i class="bi bi-house-fill"></i> Home
+    </a>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Search for products, brands and more" />
+    <button type="submit">Search</button>
+  </div>
+  <div class="nav-items">
+    <div class="dropdown">
+      <button class="dropbtn">Login</button>
+      <div class="dropdown-content">
+        <a routerLink="/sign-in">Sign In</a>
+        <a routerLink="/sign-up">Sign Up</a>
+      </div>
+    </div>
+    <div class="cart">
+      <a routerLink="/cart" class="cart-link">
+        <img src="assets/images/cart_logo.jpg" alt="Cart" />
+        <span class="text_cart">Cart</span>
+      </a>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">More</button>
+      <div class="dropdown-content">
+        <a routerLink="/account">Account</a>
+        <a routerLink="/orders">Orders</a>
+        <a routerLink="/wishlist">Wishlist</a> <!-- Link to Wishlist -->
+      </div>
+    </div>
+
+  </div>
+</nav>

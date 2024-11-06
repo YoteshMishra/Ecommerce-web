@@ -1,0 +1,12 @@
+<div *ngIf="!consentGiven" class="cookie-popup">
+  <div class="cookie-popup-content">
+    <h3>We use cookies!</h3>
+    <p>
+      This website uses cookies to ensure you get the best experience. By clicking "Accept", you consent to our use of cookies.
+    </p>
+    <div class="cookie-buttons">
+      <button (click)="acceptCookies()">Accept</button>
+      <button (click)="rejectCookies()">Reject</button>
+    </div>
+  </div>
+</div>

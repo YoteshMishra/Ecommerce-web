@@ -1,0 +1,77 @@
+<div class="container mt-5">
+  <div class="row mb-3">
+    <div class="col-md-6 col-lg-4 mx-auto">
+      <a routerLink="/home" class="btn btn-outline-primary">
+        <i class="bi bi-house-fill"></i> Back to Home
+      </a>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Sign In</h2>
+          <form #signInForm="ngForm" (ngSubmit)="onSubmit(signInForm)">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                [(ngModel)]="loginData.email"
+                #email="ngModel"
+                required
+                email
+                placeholder="name@example.com">
+              <div class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                <small *ngIf="email.errors?.['required']">Email is required</small>
+                <small *ngIf="email.errors?.['email']">Please enter a valid email</small>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                [(ngModel)]="loginData.password"
+                #password="ngModel"
+                required
+                minlength="6"
+                placeholder="Enter your password">
+              <div class="text-danger" *ngIf="password.invalid && (password.dirty || password.touched)">
+                <small *ngIf="password.errors?.['required']">Password is required</small>
+                <small *ngIf="password.errors?.['minlength']">Password must be at least 6 characters</small>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="rememberMe"
+                name="rememberMe"
+                [(ngModel)]="loginData.rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary w-100"
+              [disabled]="signInForm.invalid">
+              Sign In
+            </button>
+            <div class="text-center mt-3">
+              <a href="#" class="text-decoration-none">Forgot Password?</a>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+              <p class="mb-2">Don't have an account?</p>
+              <a routerLink="/sign-up" class="btn btn-outline-secondary">Create Account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

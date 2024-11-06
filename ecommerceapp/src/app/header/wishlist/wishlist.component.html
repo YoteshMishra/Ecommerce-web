@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <h1 class="text-center">My Wishlist</h1>
+  <div class="card">
+    <div class="card-header">
+      <h5>Your Saved Items</h5>
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of wishlistItems">
+            <td>{{ item.productName }}</td>
+            <td>${{ item.price.toFixed(2) }}</td>
+            <td>
+              <a routerLink="/product-details/{{ item.id }}" class="btn btn-info btn-sm">View</a>&nbsp;
+              <button (click)="removeFromWishlist(item.id)" class="btn btn-danger btn-sm">Remove</button>
+            </td>
+          </tr>
+          <tr *ngIf="wishlistItems.length === 0">
+            <td colspan="3" class="text-center">Your wishlist is empty.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

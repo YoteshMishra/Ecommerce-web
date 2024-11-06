@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <h1 class="text-center">Order History</h1>
+  <div class="card">
+    <div class="card-header">
+      <h5>Your Orders</h5>
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Order ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Total</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#12345</td>
+            <td>2023-10-01</td>
+            <td>Shipped</td>
+            <td>$29.99</td>
+            <td><a routerLink="/order-details/12345" class="btn btn-info btn-sm">View</a></td>
+          </tr>
+          <tr>
+            <td>#12346</td>
+            <td>2023-09-15</td>
+            <td>Delivered</td>
+            <td>$49.99</td>
+            <td><a routerLink="/order-details/12346" class="btn btn-info btn-sm">View</a></td>
+          </tr>
+          <!-- Add more orders as needed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="image-gallery">
+  <div *ngFor="let image of images" class="image-item">
+    <a [href]="image.link" target="_self">
+      <img [src]="image.src" [alt]="image.alt" />
+    </a>
+  </div>
+</div>

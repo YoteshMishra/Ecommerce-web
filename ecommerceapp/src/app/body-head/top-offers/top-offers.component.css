@@ -1,0 +1,20 @@
+.top-offers {
+  padding: 20px;
+}
+
+.offer-card {
+  background-color: #f9f9f9;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.offer-card p {
+  color: #666;
+}

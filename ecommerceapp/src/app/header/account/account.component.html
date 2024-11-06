@@ -1,0 +1,54 @@
+<div class="container mt-5">
+  <h1 class="text-center">My Account</h1>
+  <div class="card">
+    <div class="card-header">
+      <h5>Account Information</h5>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter your username" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <h5>Order History</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Order ID</th>
+          <th scope="col">Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#12345</td>
+          <td>2023-10-01</td>
+          <td>Shipped</td>
+          <td>$29.99</td>
+        </tr>
+        <tr>
+          <td>#12346</td>
+          <td>2023-09-15</td>
+          <td>Delivered</td>
+          <td>$49.99</td>
+        </tr>
+        <!-- Add more orders as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>

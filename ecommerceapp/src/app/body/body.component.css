@@ -1,0 +1,17 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px; /* Space between images */
+}
+
+.image-item {
+  flex: 0 1 calc(33.333% - 10px); /* Three items per row, minus gap */
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+.image-item img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+}

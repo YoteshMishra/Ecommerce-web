@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h1 class="text-center">Product Details</h1>
+  <div class="card">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="{{ productDetails?.imageUrl }}" class="img-fluid rounded-start" alt="{{ productDetails?.name }}">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">{{ productDetails?.name }}</h2>
+          <p class="card-text"><strong>Price:</strong> ${{ productDetails?.price?.toFixed(2) }}</p>
+          <p class="card-text"><strong>Description:</strong> {{ productDetails?.description }}</p>
+          <p class="card-text"><strong>Category:</strong> {{ productDetails?.category }}</p>
+          <div class="d-flex justify-content-between mt-4">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-secondary">Back to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

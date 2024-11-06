@@ -1,0 +1,8 @@
+.carousel {
+  width: 100%; /* Ensure the carousel takes the full width */
+  position: relative;
+}
+
+.carousel-item {
+  height: auto; /* Allow items to scale according to their content */
+}

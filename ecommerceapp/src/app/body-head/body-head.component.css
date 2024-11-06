@@ -1,0 +1,36 @@
+.categories {
+  background-color: #f1f1f1; /* Slightly darker background for better visibility */
+  padding: 0px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px 0; /* Margin to separate from other content */
+  border: 1px solid #ddd; /* Light border for definition */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.categories ul {
+  display: flex; /* Use flexbox to display items in a row */
+  justify-content: space-between; /* Evenly space items */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.categories li {
+  flex: 0 1 calc(100% / 6 - 20px); /* Fixed width based on total number of items */
+  text-align: center; /* Center-align the text in each item */
+}
+
+.categories a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+  padding: 10px 0; /* Add some vertical padding */
+  display: block; /* Make the link block-level to cover the whole area */
+  border-radius: 4px; /* Slight rounding for links */
+}
+
+.categories a:hover {
+  color: white; /* Change text color on hover */
+  background-color: #0056b3; /* Darker background on hover */
+}
